@@ -38,12 +38,23 @@
           <td>slice:1:5 </td>
           <td>{{array|slice:1:5}}</td>
         </tr>
+        <tr>
+          <td>{{PI}}</td>
+          <td>number </td>
+          <td>{{PI|number:'1.0-0'}}</td>
+        </tr>
+        <tr>
+          <td>{{PI}}</td>
+          <td>number </td>
+          <td>{{PI|number:'.0-2'}}</td>
+        </tr>
+
       </tbody>
     </table>
     <h4>Slice</h4>
     <table>
       <ul>
-        <li *ngFor="let item of array|slice:5:20">{{item}}</li>
+        <li *ngFor="let item of fringe|slice:5:20">{{item}}</li>
       </ul>
     </table>
   </div>
