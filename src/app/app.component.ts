@@ -12,4 +12,6 @@ export class AppComponent {
   fringe = ['Precognition', 'Psichokinesis', 'Teleportation', 'Nanotechnology', 'Artificial Intelligence', 'Precognition', 'Dark Matter', 'Cybernetics'];
   PI: number = Math.PI;
   percentage: number = 0.235;
+  slry: number = 1234.5;
+
 }
