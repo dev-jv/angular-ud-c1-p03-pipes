@@ -13,6 +13,8 @@ export class AppComponent {
   PI: number = Math.PI;
   percentage: number = 0.235;
   slry: number = 1234.5;
+  date: Date = new Date();
+
   observer = {
     name: 'Donald',
     key: 'September',
@@ -22,9 +24,11 @@ export class AppComponent {
       year: 2167,
     }
   };
+
   valuePromise = new Promise<string>( (resolve) => {
     setTimeout(() => {
       resolve('Data arrived!');
     }, 4500);
   });
+
 }
