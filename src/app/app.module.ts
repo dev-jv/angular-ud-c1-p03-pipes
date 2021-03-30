@@ -9,17 +9,19 @@ import '@angular/common/locales/global/en'; // english
 
 import { AppComponent } from './app.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { DomsafePipe } from './pipes/domsafe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    DomsafePipe
   ],
   imports: [
     BrowserModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'es' } // Default language
+    { provide: LOCALE_ID, useValue: 'en' } // Default language
   ],
 
   bootstrap: [AppComponent]

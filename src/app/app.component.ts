@@ -18,6 +18,8 @@ export class AppComponent {
 
   lan: string = 'es';
 
+  videoUrl: string = 'https://www.youtube.com/embed/p9dhf2Xnc68';
+
   observer = {
     name: 'Donald',
     key: 'September',
