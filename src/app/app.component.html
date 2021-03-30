@@ -25,7 +25,7 @@
         </tr>
         <tr>
           <td>{{name}}</td>
-          <td>slice:3 </td>
+          <td>slice:3</td>
           <td>{{name|slice:3}}</td>
         </tr>
         <tr>
@@ -65,43 +65,58 @@
         </tr>
         <tr>
           <td>{{slry}}</td>
-          <td>currency: EUR</td>
+          <td>currency: 'EUR'</td>
           <td>{{slry|currency: 'EUR'}}</td>
         </tr>
         <tr>
           <td>{{slry}}</td>
-          <td>currency: KRW </td>
+          <td>currency: 'KRW'</td>
           <td>{{slry|currency: 'KRW':'symbol-narrow':'.0-0'}}</td>
         </tr>
         <tr>
           <td>{{slry}}</td>
-          <td>currency: ZXV </td>
+          <td>currency: 'ZXV'</td>
           <td>{{slry|currency: 'ZXV ':'symbol':'.0-0'}}</td>
         </tr>
         <tr>
           <td>{{valuePromise}}</td>
-          <td>async </td>
+          <td>async</td>
           <td>{{valuePromise|async}}</td>
         </tr>
         <tr>
           <td>{{date}}</td>
-          <td>date </td>
+          <td>date</td>
           <td>{{date|date}}</td>
         </tr>
         <tr>
           <td>{{date}}</td>
-          <td>date: medium </td>
+          <td>date: 'medium'</td>
           <td>{{date|date: 'medium'}}</td>
         </tr>
         <tr>
           <td>{{date}}</td>
-          <td>date: short </td>
+          <td>date: 'short'</td>
           <td>{{date|date: 'short'}}</td>
         </tr>
         <tr>
           <td>{{date}}</td>
-          <td>date: MMMM - dd </td>
+          <td>date: 'MMMM - dd'</td>
           <td>{{date|date: 'MMMM - dd'}}</td>
+        </tr>
+        <tr>
+          <td>{{date}}</td>
+          <td>date: 'MMMM - dd':'':'en'</td>
+          <td>{{date|date: 'MMMM - dd':'':'fr'}}</td>
+        </tr>
+        <tr>
+          <td>{{date}}</td>
+          <td>date: 'MMMM - dd':'':'{{lan}}'
+          <br>
+          <button (click)="lang('es')" class="mr-1 btn btn-dark">Spanish</button>
+          <button (click)="lang('en')" class="mr-1 btn btn-dark">English</button>
+          <button (click)="lang('fr')" class="mr-1 btn btn-dark">French</button>
+          </td>
+          <td>{{date|date: 'MMMM - dd':'':lan}}</td>
         </tr>
       </tbody>
     </table>

@@ -15,6 +15,8 @@ export class AppComponent {
   slry: number = 1234.5;
   date: Date = new Date();
 
+  lan: string = 'es';
+
   observer = {
     name: 'Donald',
     key: 'September',
@@ -30,5 +32,10 @@ export class AppComponent {
       resolve('Data arrived!');
     }, 4500);
   });
+
+  lang(x: string): any{
+    this.lan = x;
+    console.log(this.lan);
+  }
 
 }
