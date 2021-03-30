@@ -5,13 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import '@angular/common/locales/global/es'; // spanish
 import '@angular/common/locales/global/fr'; // french
-import '@angular/common/locales/global/en'; // french
+import '@angular/common/locales/global/en'; // english
 
 import { AppComponent } from './app.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule
