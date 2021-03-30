@@ -22,4 +22,9 @@ export class AppComponent {
       year: 2167,
     }
   };
+  valuePromise = new Promise<string>( (resolve) => {
+    setTimeout(() => {
+      resolve('Data arrived!');
+    }, 4500);
+  });
 }
