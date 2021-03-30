@@ -13,5 +13,13 @@ export class AppComponent {
   PI: number = Math.PI;
   percentage: number = 0.235;
   slry: number = 1234.5;
-
+  observer = {
+    name: 'Donald',
+    key: 'September',
+    age: 500,
+    future: {
+      city: 'New York',
+      year: 2167,
+    }
+  };
 }

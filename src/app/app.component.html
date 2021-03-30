@@ -81,10 +81,18 @@
       </tbody>
     </table>
     <h4>Slice</h4>
-    <table>
-      <ul>
-        <li *ngFor="let item of fringe|slice:5:20">{{item}}</li>
-      </ul>
-    </table>
+    <hr>
+    <ul>
+      <li *ngFor="let item of fringe|slice:5:20">{{item}}</li>
+    </ul>
+    <h4>JSON </h4>
+    <hr>
+    <div class="row mb-5">
+      <div class="col">
+        <pre>
+          {{observer|json}}
+        </pre>
+      </div>
+    </div>
   </div>
 </div>
