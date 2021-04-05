@@ -5,14 +5,17 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PasswordPipe implements PipeTransform {
 
-  transform(value: string, state: boolean): string {
-    let encr = value.split('');
-    if (!state) {
-      return value;
-    } else {
-      const tmn = value.length;
-      encr = encr.map(k => '*');
-      return encr.join('');
-    }
+  // transform(value: string, state: boolean): string {
+  //   let encr = value.split('');
+  //   if (!state) {
+  //     return value;
+  //   } else {
+  //     const tmn = value.length;
+  //     encr = encr.map(k => '*');
+  //     return encr.join('');
+  // }
+
+  transform(value: string, show: boolean = true): string {
+    return (show) ? '*'.repeat(value.length) : value;
   }
 }
