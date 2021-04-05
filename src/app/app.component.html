@@ -123,6 +123,16 @@
           </td>
           <td>{{date|date: 'MMMM - dd':'':lan}}</td>
         </tr>
+        <tr>
+          <td>{{name}}</td>
+          <td>Password: {{stt}}
+            <br>
+            <button (click)="pass()" class="mr-1 btn btn-dark">
+              {{btn}}
+            </button>
+          </td>
+          <td>{{name|password: state}}</td>
+        </tr>
       </tbody>
     </table>
     <h4>Slice</h4>

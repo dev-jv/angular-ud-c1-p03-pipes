@@ -10,12 +10,14 @@ import '@angular/common/locales/global/en'; // english
 import { AppComponent } from './app.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { DomsafePipe } from './pipes/domsafe.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizePipe,
-    DomsafePipe
+    DomsafePipe,
+    PasswordPipe
   ],
   imports: [
     BrowserModule

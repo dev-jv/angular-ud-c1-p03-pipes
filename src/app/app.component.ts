@@ -20,6 +20,10 @@ export class AppComponent {
 
   videoUrl: string = 'https://www.youtube.com/embed/p9dhf2Xnc68';
 
+  state: boolean = false;
+  btn: string = 'Disable';
+  stt: string = 'Disabled';
+
   observer = {
     name: 'Donald',
     key: 'September',
@@ -39,6 +43,17 @@ export class AppComponent {
   lang(x: string): any{
     this.lan = x;
     console.log(this.lan);
+  }
+
+  pass(): any {
+    this.state = !this.state;
+    if (this.state) {
+      this.btn = 'Disable';
+      this.stt = 'Enabled';
+    } else {
+       this.btn = 'Activate';
+       this.stt = 'Disabled';
+    }
   }
 
 }
